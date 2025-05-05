@@ -1,0 +1,244 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    overflow-x: hidden;
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.maps-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.map-section {
+    scroll-snap-align: start;
+}
+
+.footer{
+    scroll-snap-align: start;
+}
+
+.sidebar {
+    height: 100vh;
+    top: 5px;
+    left: 20px;
+    position: sticky;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    z-index: 10;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    z-index: 100;
+    padding: 5px 10px;
+    transition: transform 0.3s ease, background 0.3s ease, font-size 0.3s ease;
+    transform-origin: left;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.map-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.map-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+    z-index: 1;
+}
+
+.map-section p {
+    max-width: 800px;
+    font-size: 25px;
+    font-family: Zain;
+    line-height: 1.6;
+    text-shadow: 1px 1px 6px #000;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.map-section::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px); 
+    z-index: 0; 
+}
+
+.map-img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.sidebar a.active {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.map-img:hover {
+    /* transform: scale(1.05); */
+    filter: brightness(1.1);
+}
+
+#Obsidian {
+    background-image: url('../images/MapObsidian.webp');
+}
+
+#Nebula {
+    background-image: url('../images/MapNebula.webp');
+}
+
+#Frostbite {
+    background-image: url('../images/MapFrostbite.webp');
+}
+
+#Pinnacle {
+    background-image: url('../images/MapPinnacle.webp');
+}
+
+#Crimson {
+    background-image: url('../images/MapCrimson.webp');
+}
+
+@media screen and (max-width:1000px) {
+    .sidebar a {
+        font-size: 25px;
+        padding: 10px 5px;
+    }
+
+    .map-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        padding-top: 180px;
+    }
+
+    .map-section h1 {
+        font-size: 45px;
+        padding-left: 50px;
+    }
+    
+    .map-section p {
+        font-size: 32px;
+        padding-left: 120px;
+        padding-right: 40px;
+        align-items: center;
+    }
+
+    .sidebar a.active,
+    .sidebar a:hover {
+        background: white;
+        color: black;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    .map-img {
+        position: relative;
+        margin: 40px auto 0 auto;
+        margin-right: 175px;
+        max-width: 300px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        top: 5px;
+        left: 10px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 3px 2px;
+    }
+
+    .map-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;  
+        padding-bottom: 90px;
+    }
+
+    .map-section h1 {
+        font-size: 30px;
+        padding-left: 70px;
+    }
+    
+    .map-section p {
+        font-size: 20px;
+        padding-left: 80px;
+        padding-right: 8px;
+        align-items: center;
+    }
+
+    .sidebar a.active,
+    .sidebar a:hover {
+        background: white;
+        color: black;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    .map-img {
+        position: relative;
+        margin: 20px auto 0 auto;
+        margin-right: 20px;
+        max-width: 150px;
+        display: block;
+    }
+}

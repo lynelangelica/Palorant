@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 15vh auto 0 auto;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 30px;
+    color: black;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+.main-news {
+    background-color: white;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    display: flex;
+}
+
+.main-image {
+    max-width: 50%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.news-contentMain {
+    padding: 10px;
+    max-width: 50%;
+}
+
+.news-contentMain .date-Main, 
+.news-contentMain .type-Main {
+    font-family: Inter;
+    font-size: 15px;
+    display: inline;
+    color: grey;
+}
+
+.news-contentMain .type-Main {
+    color: red;
+}
+
+.news-contentMain h3 {
+    font-size: 25px;
+    font-family: ZainBold;
+    color: black;
+    margin-top: 8px;
+
+}
+
+.news-contentMain p {
+    font-size: 20px;
+    font-family: ZainLight;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* New Features */
+.new-features {
+    background-color: white;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.features-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    border-radius: 10px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 5px; 
+}
+
+.feature-text {
+    margin-top: 5px;
+    padding-left: 3px;
+}
+
+.feature-text .date,
+.feature-text .type {
+    font-family: Inter;
+    font-size: 12px;
+    color: grey;
+    display: inline;
+}
+
+.feature-text h3 {
+    font-size: 20px;
+    font-family: ZainBold;
+    color: black;
+}
+
+.feature-text p {
+    font-size: 17px;
+    font-family: ZainLight;
+    color: black;
+}
+
+.feature-text .type {
+    color: red;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    background-color: white;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.upcoming-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.upcoming-card {
+    border-radius: 10px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 5px; 
+}
+
+.upcoming-text {
+    margin-top: 5px;
+    padding-left: 3px;
+}
+
+.upcoming-text .date,
+.upcoming-text .type {
+    font-family: Inter;
+    font-size: 12px;
+    color: grey;
+    display: inline;
+}
+
+.upcoming-text h3 {
+    font-size: 20px;
+    font-family: ZainBold;
+    color: black;
+}
+
+.upcoming-text p {
+    font-size: 17px;
+    font-family: ZainLight;
+    color: black;
+}
+
+.upcoming-text .type {
+    color: red;
+}
+
+/* Patch Notes */
+.patch-notes {
+    background-color: white;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.patch-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.patch-card {
+    border-radius: 10px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.patch-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 5px; 
+}
+
+.patch-text {
+    margin-top: 5px;
+    padding-left: 3px;
+}
+
+.patch-text .date,
+.patch-text .type {
+    font-family: Inter;
+    font-size: 12px;
+    color: grey;
+    display: inline;
+}
+
+.patch-text h3 {
+    font-size: 20px;
+    font-family: ZainBold;
+    color: black;
+}
+
+.patch-text p {
+    font-size: 17px;
+    font-family: ZainLight;
+    color: black;
+}
+
+.patch-text .type {
+    color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    .features-gallery, .upcoming-gallery, .patch-gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 15px; 
+    }
+    
+    .feature-card, .upcoming-card, .patch-card {
+        width: 45%; 
+        margin: 10px 0;
+    }
+
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image {
+        max-width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .news-contentMain {
+        max-width: 100%;
+    }
+
+    .feature-card, .upcoming-card, .patch-card {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 38px; 
+    }
+
+    .news-contentMain h3 {
+        font-size: 24px;
+    }
+
+    .news-contentMain p {
+        font-size: 20px;
+    }
+
+    .feature-text h3, .upcoming-text h3, .patch-text h3 {
+        font-size: 23px;
+    }
+
+    .feature-text p, .upcoming-text p, .patch-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; 
+    }
+
+    h2 {
+        font-size: 35px; 
+    }
+
+    .features-gallery, .upcoming-gallery, .patch-gallery {
+        display: block;
+    }
+
+    .feature-card, .upcoming-card, .patch-card {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .main-news {
+        padding: 15px;
+    }
+
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .news-contentMain {
+        max-width: 100%;
+    }
+
+    .news-contentMain h3 {
+        font-size: 22px;
+    }
+
+    .news-contentMain p {
+        font-size: 18px;
+    }
+}

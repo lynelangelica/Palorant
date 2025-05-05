@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palorant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar flex-ctr">
+        <div class="cont-nav flex-ctr">
+            <!-- logo -->
+            <div class="nav-logo flex-ctr">
+                <h1>PALORANT</h1>
+            </div>
+
+            <!-- menu -->
+            <div class="nav-menu flex-ctr" id="menu">
+                <a href="index.html" class="active-page">HOME</a>
+                <a href="pages/agents.html" class="nav-item">AGENTS</a>
+                <a href="pages/maps.html" class="nav-item">MAPS</a>
+                <a href="pages/news.html" class="nav-item">NEWS</a>
+                <a href="pages/report.html" class="nav-item">REPORT</a>
+            </div>
+
+            <!-- download -->
+            <div class="nav-download flex-ctr">
+                <a href="download.html" class="download-btn">Download</a>
+            </div>
+            
+            <!-- hamburger -->
+            <div class="nav-ham flex-ctr" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="background-content">
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="videos/homepage.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Konten di atas Video -->
+        <div class="content">
+            <h2 class="subtitle">ENJOY THE GAMES</h2>
+            <h1 class="title">A 5v5 Tactical Shooter</h1>
+            <a href="#" class="play-button">Play Now</a>
+        </div>
+    </header>
+    
+    <section class="description">
+        <div class="overlay">
+            <div class="text-box">
+                <h1 class="title">PALORANT</h1>
+                <p class="desc">
+                    A tactical 5v5 first-person shooter where players complete objectives like planting or defusing a bomb. 
+                    Each player chooses an Agent with unique abilities, blending precise gunplay with strategy and teamwork.
+                </p>
+            </div>
+        </div>
+    </section>    
+
+    <section class="best-agent">
+        <div class="agent-image">
+            <img src="images/rael.webp" alt="Rael Agent">
+        </div>
+        <div class="agent-info">
+            <h2>OUR BEST AGENT<br><span class="highlight">RAEL</span></h2>
+            <p>
+                Rael is the perfect balance of utility and strategy. Her healing, Barrier Orb, and Resurrection make her essential for turning the tide in any match. Whether defending or attacking, Rael keeps the team alive and in control.
+            </p>
+            <div class="details">
+                <div class="detail-block">
+                    <span class="label">ROLE</span>
+                    <img src="images/icons/sentinel.webp" alt="Sentinel Role" class="icon-img">
+                </div>
+                <div class="detail-block-special">
+                    <span class="label">SPECIAL ABILITIES</span>
+                    <div class="ability-icons">
+                        <img src="images/icons/slowOrbRael.webp" alt="Slow Orb" class="icon-img">
+                        <img src="images/icons/healingOrbRael.webp" alt="Healing Orb" class="icon-img">
+                        <img src="images/icons/barrierRael.png" alt="Barrier Orb" class="icon-img">
+                        <img src="images/icons/resurrectionRael.webp" alt="Resurrection" class="icon-img">
+                    </div>
+                </div>
+                <div class="detail-block">
+                    <span class="label">WIN RATE</span>
+                    <div class="value">88%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="logo">
+                    <img src="images/giotGames.png" alt="Giot Games Logo" />
+                </div>
+            </div>
+            <p class="copyright">
+            Copyright © 2024 - 2025 Giot Games Inc. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

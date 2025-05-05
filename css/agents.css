@@ -1,0 +1,237 @@
+body {
+    background: #0c0c0c;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+section{
+    margin-top: 3rem;
+    display: flex;
+    width: 95%;
+    justify-self: center;
+}
+
+.left-side{
+    padding: 2rem 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.agents-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.agents-title h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.agents-title img {
+    width: 45px;
+    height: auto;
+}
+
+/* Agent Description */
+.desc {
+    display: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.desc .desc-text {
+    max-width: 600px;
+}
+
+.desc p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+#agent-image {
+    justify-content: flex-end;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.abilities-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abilities {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 10%;
+}
+
+.abilities img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.abilities img:hover {
+    transform: scale(1.15);
+}
+
+.abilities img.selected {
+    opacity: 1;
+}
+
+/* Gameplay Preview */
+.gameplay-preview {
+    display: flex;
+}
+
+#ability-video {
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 224, 255, 0.3);
+}
+
+/* Select Agents */
+.select-agents {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+    border-radius: 12px;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.agents {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.agents img {
+    width: 85px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.agents-name {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.agents:hover {
+    background: white;
+}
+
+.agents:hover .agents-name {
+    color: black;
+}
+
+.agents.active {
+    background: white;
+}
+
+.agents.active .agents-name {
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .left-side, #agent-image {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .desc {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .abilities-cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .abilities {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .abilities img {
+        width: 60px;
+    }
+
+    #ability-video {
+        width: 95%;
+    }
+
+    .select-agents {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .agents-title h1 {
+        font-size: 32px;
+    }
+
+    .agents-title img {
+        width: 35px;
+    }
+
+    .desc p {
+        font-size: 16px;
+    }
+
+    .abilities img {
+        width: 40px;
+    }
+
+    .select-agents {
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .agents img {
+        width: 70px;
+    }
+
+    .agents-name {
+        font-size: 14px;
+    }
+}

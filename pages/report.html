@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORT</title>
+    <link rel="stylesheet" href="../css/report.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar flex-ctr">
+        <div class="cont-nav flex-ctr">
+            <!-- logo -->
+            <div class="nav-logo flex-ctr">
+                <h1>PALORANT</h1>
+            </div>
+
+            <!-- menu -->
+            <div class="nav-menu flex-ctr" id="menu">
+                <a href="../index.html" class="nav-item">HOME</a>
+                <a href="agents.html" class="nav-item">AGENTS</a>
+                <a href="maps.html" class="nav-item">MAPS</a>
+                <a href="news.html" class="nav-item">NEWS</a>
+                <a href="report.html" class="active-page">REPORT</a>
+            </div>
+
+            <!-- download -->
+            <div class="nav-download flex-ctr">
+                <a href="download.html" class="download-btn">Download</a>
+            </div>
+            
+            <!-- hamburger -->
+            <div class="nav-ham flex-ctr" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="overlay"></div>
+    <div class="container">
+        <form action="">
+            <div class="report-details">
+
+                <div class="input-box">
+                    <label for="username">Username <span class="required">*</span></label>
+                    <input type="text" id="username" required>
+                    <small id="username-error"></small>
+                </div>
+                
+                <div class="input-box">
+                    <label for="email">Email address <span class="required">*</span></label>
+                    <input type="text" id="email" required>
+                    <small id="email-error"></small>
+                </div>
+                
+                <div class="input-box">
+                    <label for="server">Server <span class="required">*</span></label>
+                    <select id="server">
+                        <option value="">-</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UAE">UAE</option>
+                    </select>
+                    <small id="server-error"></small>
+                </div>
+                
+                <div class="input-box">
+                    <label for="bug">Detailed description of the bug <span class="required">*</span></label>
+                    <textarea id="bug" rows="3" required></textarea>
+                    <small id="bug-error"></small>
+                </div>
+                
+                <div class="agree">
+                    <label for="agree">
+                        <input type="checkbox" id="agree"> I agree
+                    </label>
+                    <small id="agree-error"></small>
+                </div>
+                
+
+                <p class="disclaimer">
+                    By accepting, Palorant will have permission to send follow-up emails for further updates.
+                </p>
+
+                <button type="submit" id="btn">Submit</button>
+            </div>
+        </form>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="close-popup">&times;</span>
+                <p>Thanks for your report! Our team will review it and work on a fix soon</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="logo">
+                    <img src="../images/giotGames.png" alt="Giot Games Logo" />
+                </div>
+            </div>
+            <p class="copyright">
+            Copyright © 2024 - 2025 Giot Games Inc. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/report.js"></script>
+    <script src="../js/hamburger.js"></script>
+</body>
+</html>

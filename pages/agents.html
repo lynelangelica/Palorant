@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENTS</title>
+    <link rel="stylesheet" href="../css/agents.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar flex-ctr">
+        <div class="cont-nav flex-ctr">
+            <!-- logo -->
+            <div class="nav-logo flex-ctr">
+                <h1>PALORANT</h1>
+            </div>
+
+            <!-- menu -->
+            <div class="nav-menu flex-ctr" id="menu">
+                <a href="../index.html" class="nav-item">HOME</a>
+                <a href="agents.html" class="active-page">AGENTS</a>
+                <a href="maps.html" class="nav-item">MAPS</a>
+                <a href="news.html" class="nav-item">NEWS</a>
+                <a href="report.html" class="nav-item">REPORT</a>
+            </div>
+
+            <!-- download -->
+            <div class="nav-download flex-ctr">
+                <a href="download.html" class="download-btn">Download</a>
+            </div>
+            
+            <!-- hamburger -->
+            <div class="nav-ham flex-ctr" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="left-side">
+            <div class="agents-title">
+                <h1 id="agent-name">KAEL</h1>
+                <img id="agent-role"src="../images/icons/Initiator.webp" alt="Initiator">
+            </div>
+
+            <div class="desc">
+                <div class="desc-text">
+                    <p id="agent-desc">
+                        Born in Russia's icy tundra, Kael is a master tracker who hunts with precision and efficiency. Armed with a custom bow and advanced scouting tools, he reveals and eliminates enemies, ensuring no one can escape his sight. With every shot, he turns the battlefield into his domain.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="abilities-cont">
+                <div class="abilities" id="abilities-icons">
+                </div>
+            
+                <video id="ability-video" autoplay muted loop playsinline>
+                    <source src="../videos/slow-orb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <img id="agent-image" src="../images/Kael.webp" alt="Kael">
+    </section>
+
+    <div class="select-agents">
+        <div class="agents" onclick="selectAgent('Kael')">
+            <img src="../images/AgentsKael.webp" alt="Kael">
+            <span class="agents-name">Kael</span>
+        </div>
+        <div class="agents" onclick="selectAgent('Rael')">
+            <img src="../images/AgentsRael.webp" alt="Rael">
+            <span class="agents-name">Rael</span>
+        </div>
+        <div class="agents" onclick="selectAgent('Zyro')">
+            <img src="../images/AgentsZyro.webp" alt="Zyro">
+            <span class="agents-name">Zyro</span>
+        </div>
+        <div class="agents" onclick="selectAgent('Solvian')">
+            <img src="../images/AgentsSolvian.webp" alt="Solvian">
+            <span class="agents-name">Solvian</span>
+        </div>
+        <div class="agents" onclick="selectAgent('Kaizen')">
+            <img src="../images/AgentsKaizen.webp" alt="Kaizen">
+            <span class="agents-name">Kaizen</span>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="logo">
+                    <img src="../images/giotGames.png" alt="Giot Games Logo" />
+                </div>
+            </div>
+            <p class="copyright">
+            Copyright © 2024 - 2025 Giot Games Inc. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/agents.js"></script> 
+    <script src="../js/hamburger.js"></script>
+</body>
+</html>

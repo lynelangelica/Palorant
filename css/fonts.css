@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Valorant;
+    src: url(../fonts/Valorant.ttf);
+}
+
+@font-face {
+    font-family: ZainExtraLight;
+    src: url(../fonts/Zain-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: ZainLight;
+    src: url(../fonts/Zain-Light.ttf);
+}
+
+@font-face {
+    font-family: Zain;
+    src: url(../fonts/Zain-Regular.ttf);
+}
+
+@font-face {
+    font-family: ZainBold;
+    src: url(../fonts/Zain-Bold.ttf);
+}
+
+@font-face {
+    font-family: ZainExtraBold;
+    src: url(../fonts/Zain-ExtraBold.ttf);
+}

@@ -1,0 +1,330 @@
+@import url('fonts.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.background-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+.background-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    z-index: 5;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'Zain', sans-serif;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Zain', sans-serif;
+    margin-top: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -3px -3px 10px rgba(255, 0, 0, 0.3);
+}
+
+.play-button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 30px;
+    font-family: 'ZainBold', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 3px solid red;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    background: linear-gradient(to right, #cc0000, #660000);
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
+.description {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-image: url('../images/homebg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    padding-left: 5px;
+    padding-top: 90px;
+}
+
+.text-box {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 25px;
+    color: white;
+}
+
+.text-box .title {
+    font-size: 70px;
+    font-family: "Valorant", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.text-box .desc {
+    font-size: 25px;
+    font-family: "Zain", sans-serif;
+    line-height: 1.8;
+}
+
+.best-agent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    width: 95%;
+    justify-self: center;
+    background-image: url("../images/bestagents.png");
+    color: #fff;
+    gap: 40px;
+}
+
+.agent-image{
+    width: 50%;
+}
+
+.agent-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.agent-info {
+    max-width: 600px;
+    background-color: rgba(9, 9, 9, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(78, 77, 77, 0.3);
+}
+
+.agent-info h2 {
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.agent-info h2 .highlight {
+    color: #239EAE;
+    font-weight: 800;
+}
+
+.agent-info p {
+    font-family: "Zain", sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.detail-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-block-special .label{
+    font-family: "ZainLight", sans-serif;
+    font-size: 23px;
+    color: #aaa;
+}
+
+.detail-block .label {
+    display: block;
+    font-family: "ZainLight", sans-serif;
+    font-size: 25px;
+    color: #aaa;
+}
+
+.detail-block .icon-img {
+    width: 65px;
+    height: auto;
+}
+
+.detail-block .value {
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #00ff9f;
+}
+
+.ability-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.ability-icons .icon-img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 80px;
+    }
+
+    .subtitle {
+        font-size: 45px;
+    }
+
+    .play-button {
+        font-size: 30px;
+        padding: 10px 24px;
+    }
+
+    .text-box {
+        max-width: 90%;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-box .title {
+        font-size: 70px;
+    }
+
+    .text-box .desc {
+        font-size: 30px;
+        width: 65%;
+    }
+
+    .best-agent{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-content {
+        padding: 10px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .play-button {
+        font-size: 20px;
+        padding: 6px 20px;
+    }
+
+    .description {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .overlay {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .text-box {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .agent-image{
+        width: 100%;
+    }
+
+    .text-box .title {
+        font-size: 40px;
+    }
+
+    .text-box .desc {
+        font-size: 20px;
+    }
+
+    .agent-info h2 {
+        font-size: 30px;
+    }
+
+    .agent-info p {
+        font-size: 20px;
+    }
+}
